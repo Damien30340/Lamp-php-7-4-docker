@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  app:
+    image: lamp_php_7.4
+    container_name: php-7.4
+    volumes:
+      - ./app:/var/www/html
+    ports:
+      - 8080:80
